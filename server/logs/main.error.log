@@ -1,0 +1,35 @@
+[2022-12-10 22:35:29,075] ERROR in models: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "irsoftware" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2022-12-18 22:18:57,522] ERROR in models: (psycopg2.errors.InvalidForeignKey) there is no unique constraint matching given keys for referenced table "users"
+
+[SQL: 
+CREATE TABLE employee (
+	id SERIAL NOT NULL, 
+	employee_id INTEGER NOT NULL, 
+	name VARCHAR(64), 
+	position VARCHAR(64) NOT NULL, 
+	avatar_link VARCHAR(512), 
+	date TIMESTAMP WITHOUT TIME ZONE, 
+	company_id INTEGER NOT NULL, 
+	boss_id INTEGER, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(employee_id) REFERENCES users (id), 
+	FOREIGN KEY(name) REFERENCES users (first_name), 
+	FOREIGN KEY(company_id) REFERENCES company (id)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-01-26 21:58:48,678] ERROR in models: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-03-11 20:18:23,621] ERROR in models: 'migrate'
+[2023-03-11 20:18:26,182] ERROR in models: 'migrate'
+[2023-03-11 20:18:52,996] ERROR in models: 'migrate'
+[2023-03-11 20:19:13,467] ERROR in models: 'migrate'
+[2023-03-11 20:19:14,871] ERROR in models: 'migrate'
+[2023-03-11 20:21:10,639] ERROR in models: 'migrate'
+[2023-03-11 20:21:47,130] ERROR in models: {}
+[2023-03-11 20:21:48,804] ERROR in models: {}
+[2023-03-11 20:21:58,970] ERROR in models: 'migrate'

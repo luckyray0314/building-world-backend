@@ -1,0 +1,1729 @@
+{
+	"info": {
+		"_postman_id": "d227d456-0a6b-4827-88c0-fa1f3633fef9",
+		"name": "risoftware",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16508487"
+	},
+	"item": [
+		{
+			"name": "hiearchy",
+			"item": [
+				{
+					"name": "/api/hierarchy/employees/<EMPLOYEE_ID>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3Nzg2ODg1NywianRpIjoiMWE4Mjc1NTgtYjQxMC00NTQ2LTlmZmEtY2U4MzYzNDdlZTM4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImYzZGUzOTQzYjlhMTRmYjU4MGU3OWFhNDk1Y2JkY2IyIiwibmJmIjoxNjc3ODY4ODU3LCJleHAiOjE2Nzc4Njg5Nzd9.YekfzAS5j5thhBqKQ752o_nEotBr-To971VWtKvbt2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/hierarchy/employees/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hierarchy",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/api/hierarchy/employees/<EMPLOYEE_ID>",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/hierarchy/employees/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hierarchy",
+										"employees",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 11:20:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "964"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Got list of the employees.\",\n    \"result\": [\n        {\n            \"id\": 5,\n            \"user_id\": 9,\n            \"position\": \"designer\",\n            \"name\": \"Tom\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/53.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"user_id\": 8,\n            \"position\": \"designer\",\n            \"name\": \"Alex\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/71.jpg\"\n        },\n        {\n            \"id\": 7,\n            \"user_id\": 7,\n            \"position\": \"designer\",\n            \"name\": \"Marcus\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/60.jpg\"\n        },\n        {\n            \"id\": 8,\n            \"user_id\": 6,\n            \"position\": \"leadA\",\n            \"name\": \"Hela\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/51.jpg\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/hierarchy/owners/<COMPANY_ID>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3Mzk3NTkzMiwianRpIjoiOGM4MDAyZTQtOTlmOC00N2MzLTg3NjgtY2E4ZGJlZTlhNjc5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImExOTNlYzFiOTBhZTQzOGM4Yzc2ZmYzODk2OTVmNmQyIiwibmJmIjoxNjczOTc1OTMyLCJleHAiOjE2NzM5NzY4MzJ9.PtMu6CBIOaNN3Uso8kk17n6eiWImsFRADn30nf00mrI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/hierarchy/owners/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hierarchy",
+								"owners",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/api/hierarchy/employees/<EMPLOYEE_ID>",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/hierarchy/employees/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hierarchy",
+										"employees",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 11:20:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "964"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Got list of the employees.\",\n    \"result\": [\n        {\n            \"id\": 5,\n            \"user_id\": 9,\n            \"position\": \"designer\",\n            \"name\": \"Tom\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/53.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"user_id\": 8,\n            \"position\": \"designer\",\n            \"name\": \"Alex\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/71.jpg\"\n        },\n        {\n            \"id\": 7,\n            \"user_id\": 7,\n            \"position\": \"designer\",\n            \"name\": \"Marcus\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/60.jpg\"\n        },\n        {\n            \"id\": 8,\n            \"user_id\": 6,\n            \"position\": \"leadA\",\n            \"name\": \"Hela\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/51.jpg\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/hierarchy/moving/<EMPLOYEE_ID>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NDMyMTg5OCwianRpIjoiNWRiYTRiN2QtZmNjOC00Yzc3LTkyMGYtYjk5MjMzMDFhODdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjZhMDE5MjA3ODRlNDRlNWQ4MWViY2MyYWY2ODMxMGNmIiwibmJmIjoxNjc0MzIxODk4LCJleHAiOjE2NzQzMjI3OTh9.NeHHvDVEGVBSR79LxxLs9GCLV9fHdnn8w_EqveI7VEY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/hierarchy/moving/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hierarchy",
+								"moving",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/api/hierarchy/moving/<EMPLOYEE_ID>",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/hierarchy/moving/5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hierarchy",
+										"moving",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 11:15:33 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2065"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Got list of the employees for moving.\",\n    \"result\": [\n        {\n            \"id\": 1,\n            \"user_id\": 1,\n            \"position\": \"CEO\",\n            \"name\": \"Baby\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/71.jpg\"\n        },\n        {\n            \"id\": 3,\n            \"user_id\": 11,\n            \"position\": \"deputy\",\n            \"name\": \"Nolan\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/49.jpg\"\n        },\n        {\n            \"id\": 4,\n            \"user_id\": 10,\n            \"position\": \"manager\",\n            \"name\": \"Mila\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/68.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"user_id\": 8,\n            \"position\": \"designer\",\n            \"name\": \"Alex\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/34.jpg\"\n        },\n        {\n            \"id\": 7,\n            \"user_id\": 7,\n            \"position\": \"designer\",\n            \"name\": \"Marcus\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/28.jpg\"\n        },\n        {\n            \"id\": 8,\n            \"user_id\": 6,\n            \"position\": \"leadA\",\n            \"name\": \"Hela\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/73.jpg\"\n        },\n        {\n            \"id\": 9,\n            \"user_id\": 5,\n            \"position\": \"worker\",\n            \"name\": \"Sarah\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/6.jpg\"\n        },\n        {\n            \"id\": 10,\n            \"user_id\": 4,\n            \"position\": \"worker\",\n            \"name\": \"George\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/52.jpg\"\n        },\n        {\n            \"id\": 11,\n            \"user_id\": 3,\n            \"position\": \"worker\",\n            \"name\": \"Brown\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/22.jpg\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/hierarchy/moving/<EMPLOYEE_ID>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3Mzk3Njc3MywianRpIjoiMzAxMzMwMTMtNjYwYS00ZjY5LWEzOWEtMjMwMTc2YzgyNTk1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjdlMTg0MzA3OThhYzQyZGJhMTQ0Yjc2NDBlZTIyNTk3IiwibmJmIjoxNjczOTc2NzczLCJleHAiOjE2NzM5Nzc2NzN9.vBj_KmG-eMfd1KPWz5VwtQGuBFCR-9_GYm37Hu2nca4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"team_moving\": false,\r\n    \"leader_id\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/hierarchy/moving/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hierarchy",
+								"moving",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/api/hierarchy/moving/<EMPLOYEE_ID>",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"team_moving\": true,\r\n    \"leader_id\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/hierarchy/moving/5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hierarchy",
+										"moving",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 11:16:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "300"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Employee's 5 leader is changed to leader 3 with the team..\",\n    \"result\": {\n        \"id\": 5,\n        \"user_id\": 9,\n        \"position\": \"designer\",\n        \"name\": \"Tom\",\n        \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/70.jpg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/hierarchy/fire",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 11,\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/hierarchy/fire",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hierarchy",
+								"fire"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hierarchy/hire",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eeleven353@gmail.com\",\r\n    \"link\": \"https://localhost:3000/accept/invitation/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGF5bG9yMjNAbWFpbC5jb20ifSwiZW1wbG95ZWUiOnsid29ya19ob3VyIjo2LjUsIndhZ2UiOjM1LCJwb3NpdGlvbiI6IlFBIiwibGVhZGVyX2lkIjo0LCJjb21wYW55X2lkIjoxfSwiZnVuY3Rpb25zIjp7ImVtcGxveWVlIjpmYWxzZSwicHJvamVjdHMiOnRydWUsInNhbGVzIjp0cnVlLCJwdXJjaGFzZSI6dHJ1ZSwiZmluYW5jZSI6dHJ1ZX19.EutG2CqpbqHoWPyUsenFa3N1_ek2kUOq689qfsC7QGU\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/hierarchy/hire",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"hierarchy",
+								"hire"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/hierarchy/hire",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"sampleperson@gmail.com\",\r\n    \"link\": \"https://localhost:3000/accept/invitation/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGF5bG9yMjNAbWFpbC5jb20ifSwiZW1wbG95ZWUiOnsid29ya19ob3VyIjo2LjUsIndhZ2UiOjM1LCJwb3NpdGlvbiI6IlFBIiwibGVhZGVyX2lkIjo0LCJjb21wYW55X2lkIjoxfSwiZnVuY3Rpb25zIjp7ImVtcGxveWVlIjpmYWxzZSwicHJvamVjdHMiOnRydWUsInNhbGVzIjp0cnVlLCJwdXJjaGFzZSI6dHJ1ZSwiZmluYW5jZSI6dHJ1ZX19.EutG2CqpbqHoWPyUsenFa3N1_ek2kUOq689qfsC7QGU\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/hierarchy/hire",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"hierarchy",
+										"hire"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 01 Feb 2023 20:16:05 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Email sent.\",\n    \"result\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "/hierarchy/hire",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data-token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGF5bG9yMjNAbWFpbC5jb20ifSwiZW1wbG95ZWUiOnsid29ya19ob3VyIjo2LjUsIndhZ2UiOjM1LCJwb3NpdGlvbiI6IlFBIiwibGVhZGVyX2lkIjo0LCJjb21wYW55X2lkIjoxfSwiZnVuY3Rpb25zIjp7ImVtcGxveWVlIjpmYWxzZSwicHJvamVjdHMiOnRydWUsInNhbGVzIjp0cnVlLCJwdXJjaGFzZSI6dHJ1ZSwiZmluYW5jZSI6dHJ1ZX19.EutG2CqpbqHoWPyUsenFa3N1_ek2kUOq689qfsC7QGU\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/hierarchy/hire",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hierarchy",
+								"hire"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/hierarchy/hire",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data-token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGF5bG9yMjNAbWFpbC5jb20ifSwiZW1wbG95ZWUiOnsid29ya19ob3VyIjo2LjUsIndhZ2UiOjM1LCJwb3NpdGlvbiI6IlFBIiwibGVhZGVyX2lkIjo0LCJjb21wYW55X2lkIjoxfSwiZnVuY3Rpb25zIjp7ImVtcGxveWVlIjpmYWxzZSwicHJvamVjdHMiOnRydWUsInNhbGVzIjp0cnVlLCJwdXJjaGFzZSI6dHJ1ZSwiZmluYW5jZSI6dHJ1ZX19.EutG2CqpbqHoWPyUsenFa3N1_ek2kUOq689qfsC7QGU\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/hierarchy/hire",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hierarchy",
+										"hire"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 01 Feb 2023 20:29:06 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "265"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Employee has been added.\",\n    \"result\": {\n        \"id\": 12,\n        \"user_id\": 13,\n        \"position\": \"QA\",\n        \"name\": \"Taylor\",\n        \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/59.jpg\"\n    }\n}"
+						},
+						{
+							"name": "/hierarchy/hire",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data-token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGF5bG9yMjNAbWFpbC5jb20ifSwiZW1wbG95ZWUiOnsid29ya19ob3VyIjo2LjUsIndhZ2UiOjM1LCJwb3NpdGlvbiI6IlFBIiwibGVhZGVyX2lkIjo0LCJjb21wYW55X2lkIjoxfSwiZnVuY3Rpb25zIjp7ImVtcGxveWVlIjpmYWxzZSwicHJvamVjdHMiOnRydWUsInNhbGVzIjp0cnVlLCJwdXJjaGFzZSI6dHJ1ZSwiZmluYW5jZSI6dHJ1ZX19.EutG2CqpbqHoWPyUsenFa3N1_ek2kUOq689qfsC7QGU\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/hierarchy/hire",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hierarchy",
+										"hire"
+									]
+								}
+							},
+							"status": "BAD REQUEST",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 01 Feb 2023 20:29:15 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "100"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": false,\n    \"description\": \"Employee is in the company already\",\n    \"error_code\": 400\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "main",
+			"item": [
+				{
+					"name": "New Request",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NTgwMDA3MywianRpIjoiZmMxYTQ0OWUtYTVmMi00ZmIyLTgzZTMtOTIyYzQ0NjE5YmJmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjNlMGU2Mzk5OGVjMjRiY2ZiZDU5YWVmMGUxOTk2YThkIiwibmJmIjoxNjc1ODAwMDczLCJleHAiOjE2NzU4MDA5NzN9.BlrDe_3Syk0DLuRd4rDD1bgXwn2klZM56P1GqHBeIhs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/navbar/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"navbar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "search",
+			"item": [
+				{
+					"name": "/api/search/workers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NjA0ODg3MCwianRpIjoiMjBlMzAyMzQtYzlmMi00YmI4LWJlY2MtM2MzNDE0OTcyNjkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImZkMzVjNjM4Y2EwODRmZWNhNTE3YjcwMDkzNmY0ZDNmIiwibmJmIjoxNjc2MDQ4ODcwLCJleHAiOjE2NzYwNDk3NzB9.M-5XBMHCNDX3uQvisTu2hw3UiOgk_JW_vMqqNLHw7GY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"needle\": \"s\",\r\n    \"results_per_page\": 5,\r\n    \"page_num\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/search/workers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search",
+								"workers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/api/search/workers",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"needle\": \"worker\",\r\n    \"results_per_page\": 10,\r\n    \"page_num\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/search/workers",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"search",
+										"workers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 11:49:49 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "721"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"\",\n    \"result\": [\n        {\n            \"id\": 9,\n            \"user_id\": 5,\n            \"position\": \"worker\",\n            \"name\": \"Sarah\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/66.jpg\"\n        },\n        {\n            \"id\": 10,\n            \"user_id\": 4,\n            \"position\": \"worker\",\n            \"name\": \"George\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/57.jpg\"\n        },\n        {\n            \"id\": 11,\n            \"user_id\": 3,\n            \"position\": \"worker\",\n            \"name\": \"Brown\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/48.jpg\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "/api/search/workers",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"needle\": \"ar\",\r\n    \"results_per_page\": 5,\r\n    \"page_num\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/search/workers",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"search",
+										"workers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 10 Feb 2023 17:03:02 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "721"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,Authorization,true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET,PUT,PATCH,POST,DELETE,OPTIONS"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"\",\n    \"result\": [\n        {\n            \"id\": 9,\n            \"user_id\": 5,\n            \"position\": \"worker\",\n            \"name\": \"Sarah\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/78.jpg\"\n        },\n        {\n            \"id\": 10,\n            \"user_id\": 4,\n            \"position\": \"worker\",\n            \"name\": \"George\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/70.jpg\"\n        },\n        {\n            \"id\": 11,\n            \"user_id\": 3,\n            \"position\": \"worker\",\n            \"name\": \"Brown\",\n            \"avatar_link\": \"https://xsgames.co/randomusers/assets/avatars/male/11.jpg\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "chats",
+			"item": [
+				{
+					"name": "/api/chats",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3MzExMjYyNywianRpIjoiYWIwNDhhNjEtMjBmMC00Mzc0LWE2NTctYzEzNGJlYWNiMThiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImMzNGJlZTdlMTI4NDQ2Mjg4ZGRhMWM5NzBlMTI4YzViIiwibmJmIjoxNjczMTEyNjI3LCJleHAiOjE2NzMxMTM1Mjd9.vlR83QUGIvZl5AfJNZZWN6mx8QQ-cQ96hwYAb8oTFrw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/chats",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"chats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/chats/messages",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3Nzc3NTUxNSwianRpIjoiMDYwNDQ3ZGYtNDYzMS00ZjQ2LWE2MmMtOWVhNWE1ZWViMjA0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQ3NmM2ODgyMjIxNTQ4ZjE5NjQ5YjRmYzI3NGZiNmRiIiwibmJmIjoxNjc3Nzc1NTE1LCJleHAiOjE2Nzc3NzU2MzV9.D0TGr5GKHqz0GYWXSgG0WmLFTLstwhFXs-E27wkgJQ4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"chat_id\": 1,\r\n    \"page\": 1,\r\n    \"per_page\": 40\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/chats/messages",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"chats",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/send/message",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NzE3MjM0OCwianRpIjoiMTgxY2YzMjctYTE5ZC00MjgyLWIxMWUtYzliM2ZkOTA1NWQ3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjExYzQ4NGM3YzRiMzRlZmY4NTkwZDkxYjMyZjNjODU0IiwibmJmIjoxNjc3MTcyMzQ4LCJleHAiOjE2NzcxNzQxNDh9.8vW_1zf2cQAL1osbyzEU6a1NgRaZcjx-UeaWZzjEYJ8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"chat_id\": 1,\r\n    \"sender_id\": 1,\r\n    \"type\": \"text\",\r\n    \"text\": \"hi hi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/chats/send/message",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"chats",
+								"send",
+								"message"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "registrations",
+			"item": [
+				{
+					"name": "/verification/email/send",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eeleven353@gmail.com\",\r\n    \"password\": \"new3\",\r\n    \"first_name\": \"newusers_first_name\",\r\n    \"last_name\": \"newusers_last_name\",\r\n    \"phone_number\": \"+123455255\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/verification/email/send",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"verification",
+								"email",
+								"send"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/verification/email/send",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"eeleven353@gmail.com\",\r\n    \"password\": \"new3\",\r\n    \"first_name\": \"newusers_first_name\",\r\n    \"last_name\": \"newusers_last_name\",\r\n    \"phone_number\": \"+12345555\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/verification/email/send",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"verification",
+										"email",
+										"send"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Jan 2023 15:46:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "545"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Cookie"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "session=.eJyrVsovKYhPzU3MzFGyUkpNzUktS80zNjV2SAcJ6SXn5yrpQJRUFGQWJZZk5ucpWVUrKaQAVQcnlugoGJooeCXmKRgZGBkrGJpZmZhZGRkquPuGKNVC9JXkZ6cCtSgZmBuYWZop1QIAK6UiTg.Y8LOTg.aN_d9q6BHgYAhVsXBREoGYaoWd8; HttpOnly; Path=/"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Email verification sent to eeleven353@gmail.com\",\n    \"result\": {\n        \"id\": 1,\n        \"external_id\": \"29c7119041fb40018d0652f6bd778fed\",\n        \"token_id\": \"950e0853d8c9471379c8a0b95a8da7950ac25926e26ccb53747c8c729ce3db28\",\n        \"email\": \"eeleven353@gmail.com\",\n        \"first_name\": \"newusers_first_name\",\n        \"last_name\": \"newusers_last_name\",\n        \"companies\": [],\n        \"phone_number\": \"+12345555\",\n        \"role\": \"user\",\n        \"is_admin\": false,\n        \"is_active\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/verification/email/verify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"168428\",\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNvZGUiOjQyNjM2NCwiZXhwaXJhdGlvbiI6MTY3Njc0NjQzMi4zMzg5NzV9LCJ1c2VyIjp7ImVtYWlsIjoiZWVsZXZlbjM1M0BnbWFpbC5jb20iLCJwYXNzd29yZCI6Im5ldzMiLCJmaXJzdF9uYW1lIjoibmV3dXNlcnNfZmlyc3RfbmFtZSIsImxhc3RfbmFtZSI6Im5ld3VzZXJzX2xhc3RfbmFtZSIsInBob25lX251bWJlciI6IisxMjM0NTUyNTUifX0.bltVWrzXkrtks7t7BUm7p2IkZKEG17i30rDjC8ALnwY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/verification/email/verify",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"verification",
+								"email",
+								"verify"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/verification/email/verify",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"070696\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/api/verification/email/verify",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"verification",
+										"email",
+										"verify"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Jan 2023 15:47:59 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "535"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Cookie"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Email has been confirmed successfully.\",\n    \"result\": {\n        \"id\": 1,\n        \"external_id\": \"29c7119041fb40018d0652f6bd778fed\",\n        \"token_id\": \"950e0853d8c9471379c8a0b95a8da7950ac25926e26ccb53747c8c729ce3db28\",\n        \"email\": \"eeleven353@gmail.com\",\n        \"first_name\": \"newusers_first_name\",\n        \"last_name\": \"newusers_last_name\",\n        \"companies\": [],\n        \"phone_number\": \"+12345555\",\n        \"role\": \"user\",\n        \"is_admin\": false,\n        \"is_active\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/create/company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NjU1OTMyOCwianRpIjoiOWNmYmM1NGEtYzVjNi00YWNlLWEzNzUtMjUxMTk3YWIzYTc4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjExYzQ4NGM3YzRiMzRlZmY4NTkwZDkxYjMyZjNjODU0IiwibmJmIjoxNjc2NTU5MzI4LCJleHAiOjE2NzY1NjAyMjh9.kFdZfSToWd5R0DmLiSkvlz4-9u0COnTbvYWTQz6djHM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Amazon3\",\r\n    \"name_in_law\": \"Amazon3 LLC\",\r\n    \"login\": \"a3\",\r\n    \"email\": \"amazon3@gmail.com\",\r\n    \"phone_number\": \"+1235\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/create/company",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"create",
+								"company"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/create/company",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Amazon3\",\r\n    \"name_in_law\": \"Amazon3 LLC\",\r\n    \"login\": \"a3\",\r\n    \"email\": \"amazon3@gmail.com\",\r\n    \"phone_number\": \"+1235\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/create/company",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"create",
+										"company"
+									]
+								}
+							},
+							"status": "CREATED",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.9"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Feb 2023 14:56:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "337"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type,Authorization,true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET,PUT,PATCH,POST,DELETE,OPTIONS"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Created successfully\",\n    \"result\": {\n        \"id\": 4,\n        \"external_id\": \"7abbc90f50ab45ecab9a17ff63adf56e\",\n        \"token_id\": \"9e195f7ca69575be30d4af0fddf6002d5080e83a1b21e037123ea530de8ff9c7\",\n        \"name\": \"Amazon3\",\n        \"name_in_law \": \"Amazon3 LLC\",\n        \"owner_id\": 1\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "profile",
+			"item": [
+				{
+					"name": "/edit/profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NTE5NzAxOSwianRpIjoiZDk2NzQ3ZDAtMDIxMy00ZjIxLThhODgtODQyYzJiYmYyNzhlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImU5YTllMDhhNDIyZjRlMzg4OGFmMjVhODI4MGM3MWIwIiwibmJmIjoxNjc1MTk3MDE5LCJleHAiOjE2NzUxOTc5MTl9.r9DKcBSFqc9b1GPOOhXqsomQEX5P4pjHQ11QiEwZLuE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"key\": \"phone_number\",\r\n    \"value\": \"+123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/edit/profile",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"edit",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/edit/profile",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"key\": \"first_name\",\r\n    \"value\": \"Baby Yoda\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/edit/profile",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"edit",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.11.1"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Jan 2023 16:57:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "631"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"description\": \"Profile edited\",\n    \"result\": {\n        \"id\": 1,\n        \"external_id\": \"e9a9e08a422f4e3888af25a8280c71b0\",\n        \"token_id\": \"2059c1aa80387619a5b058847c4be3a664aa48dd7eb871c0d402a2b983613662\",\n        \"email\": \"baby\",\n        \"first_name\": \"Baby Yoda\",\n        \"last_name\": null,\n        \"companies\": [\n            {\n                \"external_id\": \"1de6b9ec89e4492395be62ad2927f1e5\",\n                \"name\": \"Amazon1\",\n                \"owner_id\": 1\n            }\n        ],\n        \"phone_number\": null,\n        \"role\": \"user\",\n        \"is_admin\": false,\n        \"is_active\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/profile/updateStatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NzQyMDE4NCwianRpIjoiOTk5Njg5MjktYThmZS00ZTczLThjMTEtYTY3N2NjYmExNTJkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Ijg1NjJlZTExNTA5MTQwMmVhYWNiNjUxZDFjM2JlNTdhIiwibmJmIjoxNjc3NDIwMTg0LCJleHAiOjE2Nzc0MjE5ODR9.wJyP3jmX5UW0DULuGzIeFJra3BYyUidl9aO2AJVG-s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/profile/updateStatus",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"profile",
+								"updateStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/api/api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/api",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/who_am_i",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NzI2NzA4MSwianRpIjoiNGJiOWMzOTEtNGNjYS00NjE5LTg3MWMtOWUxOGQzNTYxYmMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjExYzQ4NGM3YzRiMzRlZmY4NTkwZDkxYjMyZjNjODU0IiwibmJmIjoxNjc3MjY3MDgxLCJleHAiOjE2NzcyNjg4ODF9.Z7WaZyARM0-kLJV5uVDFPIMXHE25UR9KkVhSxup1ywc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/whoami",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"whoami"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"baby\",\r\n    \"password\": \"baby\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/refresh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODg4NTQwMywianRpIjoiMTMxMzc2NmItMDk3OS00NGVkLThmOGEtMDlmZGZiYTYwNmIyIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJkMTU1NmRlZWY2YjI0MDA1ODQ2NDQ5NzI2MDVhZWZkYyIsIm5iZiI6MTY2ODg4NTQwMywiZXhwIjoxNjcxNDc3NDAzfQ.4yTwHsOcjS_2SYAVENeEpdnf4sDOElSe915xl2lJkPQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/refresh",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee\": {\r\n        \"work_hour\": 6.5,\r\n        \"wage\": 35,\r\n        \"position\": \"QA\",\r\n        \"leader_id\": 4,\r\n        \"company_id\": 1\r\n    },\r\n    \"functions\": {\r\n        \"data\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NTYxODI0OCwianRpIjoiZTY4ZDM2MmItOWRiZC00YzE4LWFhNWQtZjg1MzFmYjMyNTY3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjExN2EyMTljNzIyOTQ1MTFhMTQ3OGNmMmZhYjQzMjJjIiwibmJmIjoxNjc1NjE4MjQ4LCJleHAiOjE2NzU2MTkxNDh9.zo9UG66_xkD3ageNFovfvslzxV4buGgaM2q0mjAaZDQ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://127.0.01:5000/api",
+			"type": "string"
+		}
+	]
+}
